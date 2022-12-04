@@ -353,13 +353,12 @@ console.log(windWidth);
 console.log(' ');//просто пробіл в консолі
 console.log('задача №2');
 
-
-let block = document.querySelector('.header');
-console.log(block);
-block.scrollTop = 200;
-let element = block.scrollTop
-console.log(element);
-
+// автоматичний скрол при загрузці сторінки на 100px вниз
+window.scrollTo({
+  top: 100,
+  left: 0,
+  behavior: "smooth"
+});
 
 console.log(' ');//просто пробіл в консолі
 console.log('задача №3');
